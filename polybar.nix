@@ -20,7 +20,7 @@ in
 	foreground = foreground;
 	modules-left = " ";
 	modules-center = "date";
-	modules-right = " ";
+	modules-right = "battery";
       };
       "module/date" = {
         type = "internal/date";
@@ -28,6 +28,15 @@ in
 	date = "%H %M %S";
 	label = "%date%";
 	label-foreground = foreground;
+      };
+      "module/battery" = {
+        type = "internal/battery";
+	full-at = 99;
+	low-at = 10;
+	battery = "BAT0";
+	adapter = "ADP1";
+	poll-interval = 5;
+	label-padding = 10;
       };
     };
   };
