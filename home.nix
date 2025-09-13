@@ -6,6 +6,7 @@
     ./bash.nix
     ./polybar.nix
     ./i3.nix
+    ./picom.nix
   ];
 
   home.username = "dev";
@@ -19,6 +20,7 @@
     neofetch
     polybar
     tmux
+    picom
   ];
 
   programs.home-manager.enable = true;
