@@ -7,6 +7,7 @@
     ./polybar.nix
     ./i3.nix
     ./picom.nix
+    ./alacritty.nix
   ];
 
   home.username = "dev";
@@ -15,6 +16,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+    alacritty
     neovim
     git
     neofetch

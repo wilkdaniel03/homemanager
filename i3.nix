@@ -11,8 +11,8 @@
       window.border = 0;
 
       gaps = {
-        inner = 0;
-        outer = 0;
+        inner = 15;
+        outer = 5;
       };
 
       keybindings = {
